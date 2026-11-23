@@ -1,0 +1,31 @@
+{
+  "mandi_names": [
+    "Raisen Mandi",
+    "Vidisha Mandi",
+    "Bhopal Mandi"
+  ],
+  "varieties": [
+    "PUSA",
+    "1886"
+  ],
+  "firm_names": [
+    "Babu Lal Manoj Kumar",
+    "Ankit Traders",
+    "Siddharth Traders"
+  ],
+  "tag_colors": [
+    "Red",
+    "Green",
+    "Blue",
+    "Yellow",
+    "Orange",
+    "Purple",
+    "Black",
+    "White"
+  ],
+  "default_mandi": "Raisen Mandi",
+  "default_variety": "PUSA",
+  "default_firm": "Babu Lal Manoj Kumar",
+  "default_tag_color": "Red",
+  "bages_per_print": 21
+}

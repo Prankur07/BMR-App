@@ -1,0 +1,139 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.env
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Test Coverage
+coverage/
+.nyc_output/
+htmlcov/
+.pytest_cache/
+.coverage
+.coverage.*
+.tox/
+nosetests.xml
+test.xml
+*.lcov
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.orig
+tmp/
+temp/
+
+# Node.js
+node_modules/
+npm-cache/
+.eslintcache
+.stylelintcache
+.yarn-integrity
+
+# Build Output
+frontend/dist/
+frontend/build/
+backend/dist/
+*.tsbuildinfo
+
+# Environment Files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Secrets (never commit!)
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# Project Specific
+backend/test_*.pdf
+backend/test_*.docx
+*.pdf
+*.docx
+!Sample.doc
+!Sampl.pdf
+
+# CI/CD
+.github/workflows/*.yml
+.gitlab-ci.yml
+.travis.yml
+
+# Misc
+*.pid
+*.seed
+*.pid.lock

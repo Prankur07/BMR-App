@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Generate PWA Icons</title>
+</head>
+<body>
+  <canvas id="canvas" width="512" height="512"></canvas>
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    
+    function drawIcon(size) {
+      canvas.width = size;
+      canvas.height = size;
+      const radius = size * 0.156;
+      
+      // Background
+      ctx.fillStyle = '#2C3E50';
+      ctx.beginPath();
+      ctx.roundRect(0, 0, size, size, radius);
+      ctx.fill();
+      
+      // Text
+      ctx.fillStyle = 'white';
+      ctx.font = `bold ${size * 0.55}px system-ui, sans-serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('BMR', size/2, size/2 + size*0.05);
+      
+      return canvas.toDataURL('image/png');
+    }
+    
+    // Generate 192x192
+    const data192 = drawIcon(192);
+    const link192 = document.createElement('a');
+    link192.download = 'pwa-192x192.png';
+    link192.href = data192;
+    link192.click();
+    
+    // Generate 512x512
+    setTimeout(() => {
+      const data512 = drawIcon(512);
+      const link512 = document.createElement('a');
+      link512.download = 'pwa-512x512.png';
+      link512.href = data512;
+      link512.click();
+      
+      // Generate apple-touch-icon (180x180)
+      setTimeout(() => {
+        const data180 = drawIcon(180);
+        const link180 = document.createElement('a');
+        link180.download = 'apple-touch-icon.png';
+        link180.href = data180;
+        link180.click();
+      }, 100);
+    }, 100);
+  </script>
+</body>
+</html>
